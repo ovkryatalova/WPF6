@@ -1,0 +1,25 @@
+﻿<Page x:Class="WPF6.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF6.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Авторизация">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Логин"></TextBlock>
+                <TextBox x:Name="TBoxLogin"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Пароль"></TextBlock>
+                <PasswordBox x:Name="PBoxPassword"></PasswordBox>
+            </StackPanel>
+            <Button Content="Войти" Name="BtnLogin" Click="BtnLogin_Click"
+HorizontalAlignment="Right"></Button>
+        </StackPanel>
+    </Grid>
+</Page>
